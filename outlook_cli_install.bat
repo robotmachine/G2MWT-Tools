@@ -17,16 +17,13 @@ IF EXIST "%PROGRAMFILES(X86)%" (
     SET "VSTOINSTPATH=C:\Program Files\Common Files\microsoft shared\VSTO\10.0\VSTOInstaller.exe"
 )
 
-:aTest
-echo This is a test
-
 :checkVSTools
 IF NOT EXIST "%VSTOINSTPATH%" (
         ECHO Visual Studio 2010 Tools for Outlook is not installed correctly.
         ECHO Please go to https://bit.ly/vstools to install.
         PAUSE
 		EXIT
-    )
+)
 
 :getProd
 CLS
