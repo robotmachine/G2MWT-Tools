@@ -6,5 +6,6 @@
 
 ## Other Projects
 > macOS
+
 * [GoToMeeting Removal Tool](https://github.com/robotmachine/GoToMeeting-Removal-Tool)
 * [GoToLogFiles (Log File Collection Utility)](https://github.com/robotmachine/GoToLogFiles)
