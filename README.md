@@ -1,10 +1,10 @@
-#G2MWT Tools
+# G2MWT Tools
+## Unofficial helper tools for GoToMeeting, GoToWebinar, GoToTraining, and OpenVoice
 
-##Unorganised repository for GoToMeeting, GoToWebinar, GoToTraining, and OpenVoice tools.
-
-## Current tools:
+## Tool Downloads
 * [Outlook CLI Installer](https://github.com/robotmachine/G2MWT-Tools/releases/download/latest/outlook_cli_install.zip)
 
-# Please also see these tools
+## Other Related Projects
+### macOS
 * [GoToMeeting Removal Tool](https://github.com/robotmachine/GoToMeeting-Removal-Tool)
-* [GoToLogFiles](https://github.com/robotmachine/GoToLogFiles)
+* [GoToLogFiles (Log File Collection Utility)](https://github.com/robotmachine/GoToLogFiles)
