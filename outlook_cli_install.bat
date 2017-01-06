@@ -40,9 +40,6 @@ ECHO 1) GoToMeeting for Outlook
 ECHO 2) OpenVoice for Outlook
 SET /p prod="Enter Selection: "
 
-SET "G2MPATH=https://builds.citrixonlinecdn.com/builds/calendarintegration/outlook/G2M/GoToMeetingOutlookCalendarPlugin.vsto"
-
-
 IF %PROD% EQU 1 (
     SET "PRODPATH=https://builds.citrixonlinecdn.com/builds/calendarintegration/outlook/G2M/GoToMeetingOutlookCalendarPlugin.vsto"
 	) ELSE (
