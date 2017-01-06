@@ -1,13 +1,21 @@
 @ECHO OFF
-SETLOCAL ENABLEEXTENSIONS
+setlocal EnableExtensions EnableDelayedExpansion
 
 :checkAdmin
 fsutil dirty query %systemdrive% >nul
-IF %errorLevel% == 0 (
-    ECHO This script can only be run as the current user.
-    ECHO Do not run as administrator.
-    PAUSE
-    EXIT
+IF %errorLevel% EQU 0 (
+    ECHO This script should not be run as administrator and it
+    ECHO seems possible that you have done so.
+    ECHO --
+    ECHO Please type "0" to bypass if this is not correct or
+    ECHO press enter to exit.
+    SET "bypass=1"
+    SET /p bypass=".:. "
+    IF !BYPASS! EQU 0 (
+        GOTO :checkArch
+        ) ELSE (
+            EXIT
+        )
 )
 
 :checkArch
