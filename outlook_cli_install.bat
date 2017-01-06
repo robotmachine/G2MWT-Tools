@@ -1,6 +1,8 @@
 @ECHO OFF
 setlocal EnableExtensions EnableDelayedExpansion
 
+TITLE .:. GoToMeeting and OpenVoice for Outlook Helper .:.
+
 :checkAdmin
 fsutil dirty query %systemdrive% >nul
 IF %errorLevel% EQU 0 (
