@@ -4,6 +4,11 @@ setlocal EnableExtensions EnableDelayedExpansion
 TITLE .:. GoToMeeting and OpenVoice for Outlook Helper .:.
 
 :checkAdmin
+REM This command does not do anything useful
+REM It only exists to check to see if we have admin rights
+REM This command fails if run as a user and succeeds if run as admin
+REM After running the command and redirecting all output to nowhere
+REM we check the exit code to guess if we are running as admin or not.
 fsutil dirty query %systemdrive% >nul
 IF %errorLevel% EQU 0 (
     ECHO This script should not be run as administrator and it
@@ -21,6 +26,8 @@ IF %errorLevel% EQU 0 (
 )
 
 :checkArch
+REM For lack of a more sensible method, we just look to see if the Program Files (x86) directory exits
+REM to determine if we're on a 32 or 64 bit OS
 IF EXIST "%PROGRAMFILES(X86)%" (
     SET "VSTOINSTPATH=C:\Program Files (x86)\Common Files\microsoft shared\VSTO\10.0\VSTOInstaller.exe"
 ) ELSE (
