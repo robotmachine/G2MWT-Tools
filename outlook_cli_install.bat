@@ -25,6 +25,21 @@ IF %errorLevel% EQU 0 (
         )
 )
 
+:checkRegistry
+REG QUERY "HKCU\Software\Microsoft\Office\Outlook\Addins\GoToMeetingOutlookCalendarPlugin"
+IF %errorLevel% EQU 0 (
+    CLS
+	ECHO GoToMeeting for Outlook might already be installed
+	ECHO Please uninstall from Programs and Features before proceeding
+	PAUSE)
+	
+REG QUERY "HKCU\Software\Microsoft\Office\Outlook\Addins\OpenVoiceForOutlook"
+IF %errorLevel% EQU 0 (
+	CLS
+	ECHO OpenVoice for Outlook might already be installed
+    ECHO Please uninstall from Programs and Features before proceeding
+	PAUSE)
+
 :checkArch
 REM For lack of a more sensible method, we just look to see if the Program Files (x86) directory exits
 REM to determine if we're on a 32 or 64 bit OS
