@@ -3,6 +3,7 @@
 
 ## Tool Downloads
 * [Outlook CLI Installer](https://github.com/robotmachine/G2MWT-Tools/releases/download/latest/outlook_cli_install.zip)
+* [Native Scheduler Registry Fix](https://github.com/robotmachine/G2MWT-Tools/releases/download/latest/g2m_use_native_scheduler.zip) 
 
 ## Other Projects
 > macOS
