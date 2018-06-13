@@ -65,10 +65,10 @@ ECHO 2) OpenVoice for Outlook
 SET /p prod="Enter Selection: "
 
 IF %PROD% EQU 1 (
-    SET "PRODPATH=https://builds.citrixonlinecdn.com/builds/calendarintegration/outlook/G2M/GoToMeetingOutlookCalendarPlugin.vsto"
+    SET "PRODPATH=https://builds.getgocdn.com/builds/calendarintegration/outlook/G2M/GoToMeetingOutlookCalendarPlugin.vsto"
 	) ELSE (
 	    IF %PROD% EQU 2 (
-		    SET "PRODPATH=https://builds.citrixonlinecdn.com/builds/calendarintegration/outlook/openvoice/OpenVoiceForOutlook.vsto"
+		    SET "PRODPATH=https://builds.getgocdn.com/builds/calendarintegration/outlook/openvoice/OpenVoiceForOutlook.vsto"
 		) ELSE (
 		    CLS
 			ECHO Invalid selection. Please try again.
